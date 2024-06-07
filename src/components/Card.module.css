@@ -72,3 +72,8 @@
     transition: 0.5s;
    
 }
+@media screen and (max-width:480px) {
+    .card{
+        width:160px;
+    }
+}
