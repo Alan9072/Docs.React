@@ -1,0 +1,186 @@
+.foreGroundArea{
+    padding: 10px;
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100vw;
+    height:100vh;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0);
+}
+.addBtnDiv{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+.addBtn{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    border:none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.modeBtn{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    border:none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+.sun{
+    background-color: black;
+    color: white;
+}
+.moon{
+    color: black;
+    background-color: white;
+}
+
+.notesDiv{
+    display: flex;
+    justify-content: center;
+    gap:15px;
+    flex-wrap: wrap;
+    align-content: baseline;
+    background-color: rgba(0, 255, 255, 0);
+    height:calc(100% - 40px);
+    width:100%;
+    padding:0px;
+    padding-top: 20px;
+    overflow:auto;
+    scrollbar-width: none;
+}
+.slidingDiv{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top:10px;
+    right:60px;
+    transition: all 0.5s ease;
+    
+    
+}
+.visible{
+    top:-150%;
+    right:-150%;
+    width:4000px;
+    height:4000px;
+    
+    
+}
+.mainInputDiv{
+    width:100%;
+    height:100%;
+    background-color: blue;
+    z-index: 5;
+    position: absolute;
+    top:100%;
+    transition: all 0.5s;
+}
+
+.top{
+    top:0px;
+}
+.innerDiv{
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.inputBox{
+    width:350px;
+    background-color:#282828;
+    border-radius: 20px;
+    display: flex;
+    padding:20px;
+    flex-direction: column;
+}
+.inputBox h3{
+    color: #494949;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+    font-weight: 100;
+}
+.inputBox input{
+    background-color:#353535 ;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    min-height:35px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #cccccc00;
+    outline: none;   
+    transition: border-color 0.3s ease; 
+
+}
+.inputBox input:focus{
+    border-color:#1B83F8;
+}
+.inputBox label{
+    color: rgb(207, 207, 207);
+    font-size:12px;
+    margin-bottom: 5px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.inputBox textarea{
+    background-color:#353535 ;
+    color: white;
+    border: none;
+    resize: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #cccccc00;
+    outline: none;   
+    transition: border-color 0.3s ease; 
+
+}
+.inputBox textarea:focus{
+    border-color:#1B83F8;
+}
+.inputBox button{
+    background-color:#1B83F8;
+    border: none;
+    height:35px;
+    border-radius: 5px;
+    color: white;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.inputBox button:hover{
+    background-color: #0000FF;
+}
+.closeBtn{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    border:none;
+    position: absolute;
+    top:10px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+@media screen and (max-width: 480px) {
+    .inputBox{
+        width:300px;
+    }
+}

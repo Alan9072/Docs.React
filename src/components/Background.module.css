@@ -1,0 +1,28 @@
+.containDiv{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+}
+
+.backLogo{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    font-size: 20vw;
+    padding: 10px 10px;
+    border-radius: 10px;
+    letter-spacing: -2px;
+    color: rgb(147, 145, 145);
+    
+  }
+  .navBar{
+    font-size: large;
+    position: absolute;
+    top:5%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color: rgb(91, 91, 91);
+    font-weight: 600;
+  }

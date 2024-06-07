@@ -1,0 +1,74 @@
+.card{
+    width:170px;
+    height:200px;
+    border-radius: 35px;
+    background-color: rgba(74, 74, 74, 0.12);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    position: relative;
+    overflow: hidden;
+    border:1px solid rgb(63, 63, 63);
+}
+
+.desc{
+    font-size:13px;
+    color: rgb(255, 255, 255);
+    max-width:100%;
+    height:108px;
+    background-color: rgba(0, 255, 255, 0);
+    overflow-y: auto;
+    text-wrap: wrap;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    
+}
+
+/* width */
+.desc::-webkit-scrollbar {
+    width: 2px;
+  }
+  
+  /* Track */
+.desc::-webkit-scrollbar-track {
+    background: #a3a3a3;
+    border-radius: 20px;
+  }
+  
+  /* Handle */
+.desc::-webkit-scrollbar-thumb {
+    background: #000000;
+    border-radius: 20px;
+  }
+.btnDiv{
+    width:100%;
+    height:30px;
+    bottom: 0px;
+    background-color: #d91c1c;
+    position: absolute;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.btnDiv:hover{
+    background-color: red;
+    .deleteBtn{
+        color: #ffffff;
+    }
+}
+
+.deleteBtn{
+    width:50%;
+    height:100%;
+    display: flex;
+    color: rgb(205, 196, 196);
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    gap:5px;
+    transition: 0.5s;
+   
+}
