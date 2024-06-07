@@ -1,8 +1,10 @@
-# React + Vite
+# Docs.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+My project is a note-taking web application built using React. It allows users to add, view, and delete notes easily. The main interface provides options to switch between light and dark modes for personalization. Each note is represented by a card component, displaying the title, description, and a delete button. The application is designed to be intuitive and user-friendly, helping me stay organized and productive with my notes.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+
+
+
+
