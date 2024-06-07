@@ -9,7 +9,6 @@ import { useRef, useState } from "react";
 
 function Foreground() {
   const slidingDivRef = useRef(null);
-  const ref = useRef(null);
   const InputDivRef = useRef(null);
   const [isSun, setIsSun] = useState(false);
   /****************/
@@ -66,7 +65,7 @@ function Foreground() {
 
   return (
     <>
-      <div className={styles.foreGroundArea} ref={ref}>
+      <div className={styles.foreGroundArea}>
         <div className={styles.addBtnDiv}>
           <button
             className={`${styles.modeBtn} ${isSun ? styles.sun : styles.moon}`}
@@ -90,7 +89,6 @@ function Foreground() {
               description={note.description}
               color={isSun}
               onDelete={() => handleDeleteNote(index)} // Pass onDelete function
-              reference = {ref}
             />
           ))}
         </div>
